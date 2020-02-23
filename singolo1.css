@@ -181,4 +181,72 @@ h1 {
 .slider__right-arrow:hover, .slider__left-arrow:hover {
     background-color: #000;
     transition: background-color 0.5s ease-out;
-}  
+}
+
+.services {
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #fff;
+}
+
+.services h2 {
+    font-size: 3em;
+    line-height: 1.8;
+    color: #666d89;
+    padding-top: 62px;
+    letter-spacing: -1;
+    font-weight: 900;
+}
+
+.services .services__description {
+    font-size: 1.8em;
+    line-height: 30px;
+    color: #767e9e;
+    text-align: left;
+    font-weight: 300;
+}
+
+
+.services__layout-3-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 17px;
+    
+}
+
+.services__item {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.services__item-description {
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: #767e9e;
+    
+}
+
+.services__item-content {
+    position: relative;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.services__header-item {
+    font-size: 1.8em;
+    line-height: 1.8em;
+    text-align: left;
+    color: #666d89;
+    font-weight: 900;
+   
+}
+
+
+.services-item-img {
+    padding-right: 21px;
+    padding-top: 6px;
+}
