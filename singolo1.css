@@ -1,3 +1,5 @@
+@import 'assets/fonts/fonts.css';
+
 * {
     padding: 0;
     margin: 0;
@@ -125,7 +127,7 @@ a {
 }
 
 .left-phone {
-    background-image: url('./assets/vertical-phone.png');
+    background-image: url('./assets/img/vertical-phone.png');
     background-repeat: no-repeat;
     height: 483px;
     width: 241px;
@@ -133,7 +135,7 @@ a {
 }
 
 .right-phone {
-    background-image: url('./assets/horizontal-phone.png');
+    background-image: url('./assets/img/horizontal-phone.png');
     background-repeat: no-repeat;
     width: 484px;
     height: 240px;
