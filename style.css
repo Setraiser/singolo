@@ -247,3 +247,166 @@ a {
     padding-right: 21px;
     padding-top: 6px;
 }
+
+.portfolio {
+    background-color: #2d303a;
+    padding-top: 71px;
+    padding-bottom: 47px;
+    border-bottom: 6px solid #767e9e;
+}
+
+.portfolio-title {
+    font-size: 30px;
+    font-weight: 900;
+    color: #666d89;
+    line-height: 18px;
+    margin-bottom: 33px;
+}
+
+.portfolio-description {
+    font-size: 18px;
+    font-weight: 300;
+    color: #767e9e;
+    line-height: 16px;
+    margin-bottom: 19px;
+}
+
+.filter-tags {
+    display: flex;
+}
+
+.filter-tags__tag {
+    outline: 0;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: transparent;
+    color:#767e9e;
+    font-size: 12px;
+    padding: 1px 6px;
+    cursor: pointer;
+    line-height: 18px;
+    transition: 0.5s ease-out;
+}
+
+.filter-tags__tag:hover {
+    color: #fff;
+    border-color: #fff;
+    transition: 0.5s ease-out;
+}
+
+.active {
+    color: #fff;
+    border-color: #fff;
+}
+
+.tag:last-child {
+    margin-right: 0;
+}
+
+.portfolio-list-wrapper {
+    margin-top: 18px;
+    max-height: 621px;
+    overflow: hidden;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-list-item {
+    width: 220px;
+    height: 187px;
+    margin-bottom: 20px;
+}
+
+.about {
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #fff;
+    padding-top: 69px;
+    padding-bottom: 67px;
+
+}
+
+
+.about-title {
+    font-size: 30px;
+    font-weight: 900;
+    color: #666d89;
+    line-height: 18px;
+    margin-bottom: 26px;
+}
+
+.about-description {
+    font-size: 18px;
+    font-weight: 300;
+    color: #767e9e;
+    line-height: 30px;
+    margin-bottom: 45px;
+}
+
+.about__person-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.about__person-list-item {
+    width: 300px;
+}
+
+.about__person-list-item:first-child .social-block{
+    margin-left: 1px;
+}
+
+.person-image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.about__person-name {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    padding-top: 15px;
+    letter-spacing: -0.2px;
+
+}
+
+.about__person-description {
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-weight: 400;
+    margin-top: 9px;
+    margin-bottom: 23px;
+
+}
+
+.social-block {
+    width: 152px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+.social-block a {
+    height: 32px;
+    border-radius: 50%;
+    transition: 0.5s ease-out;
+}
+
+.social-block a:hover {
+    background-color: #fff;
+    transition: 0.5s ease-out;
+}
+
+.social-image {
+    height: 32px;
+    width: 32px;
+}
