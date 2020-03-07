@@ -23,3 +23,227 @@ ul {
 a {
     text-decoration: none;
 }
+
+.wrapper {
+    width: 940px;
+    padding: 0 40px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header {
+    height: 89px;
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+}
+
+.header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo .header-title{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: -0.48px;
+    
+}
+
+
+.logo .star {
+    color: #bc5c59;
+}
+
+.header__navigation {
+    padding-top: 11px;
+}
+
+.header__navigation ul{
+    display: flex;
+}
+
+.header__navigation .nav-item {
+    margin-left: 28.5px;
+    display: inline-block;
+    position: relative;
+}
+
+.header__navigation .nav-item:not(:last-child)::after {
+    content: ".";
+    display: block;
+    color: #494e62;
+    position: absolute;
+    right: -15;
+    top: -8px;
+}
+
+.nav-item a {
+    display: block;
+    font-size: 12px;
+    line-height: 6px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.5s ease-out; 
+}
+
+.nav-item a:hover {
+    color: #f06c64;
+    transition: color 0.5s ease-out;
+}
+
+.slider {
+    background-color: #f06c64;
+    padding-top: 47.02px;
+    padding-bottom: 57px;
+    border-bottom: 6px solid #ea666b;
+}
+
+.slider .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7px;
+}
+.slider__slide-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 800px;
+}
+
+.slider__slide-img-container {
+    position: relative;
+
+}
+
+.left-phone {
+    background-image: url('./assets/img/vertical-phone.png');
+    background-repeat: no-repeat;
+    height: 483px;
+    width: 241px;
+    
+}
+
+.right-phone {
+    background-image: url('./assets/img/horizontal-phone.png');
+    background-repeat: no-repeat;
+    width: 484px;
+    height: 240px;
+}
+
+.slider__phone-display-image {
+    position: absolute;
+
+}
+
+.slider__phone-display-image.left {
+    top: 65px;
+    left: 16px;
+}
+
+.slider__phone-display-image.right {
+    left: 60px;
+    top: 13px;
+}
+
+.slider__left-arrow {
+    background: url('./assets/img/l_arrow.png') no-repeat;
+    height: 27px;
+    width: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: initial;
+    transition: background-color 0.5s ease-out;
+
+}
+
+.slider__right-arrow {
+    background: url('./assets/img/r_arrow.png') no-repeat;
+    height: 27px;
+    width: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: initial;
+    transition: background-color 0.5s ease-out;
+}
+
+.slider__right-arrow:hover, .slider__left-arrow:hover {
+    opacity: 0.75;
+    transition: opacity 0.5s ease-out;
+}
+
+.services {
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #fff;
+    padding-top: 62px;
+    padding-bottom: 16px;
+}
+
+.services h2 {
+    font-size: 3em;
+    line-height: 30px;
+    color: #666d89;
+    padding-bottom: 21px;
+    font-weight: 900;
+}
+
+.services .services__description {
+    font-size: 1.8em;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+.services__layout-3-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 42px;
+    padding-bottom: 17px;
+    
+}
+
+.services__item {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 26px;
+}
+
+.services__item-description {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    padding-top: 5px;
+    
+}
+
+.services__item-content {
+    position: relative;
+    display: inline-block;
+}
+
+.services__header-item {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    color: #666d89;
+    font-weight: 900;
+}
+
+
+.services-item-img {
+    padding-right: 21px;
+    padding-top: 6px;
+}
