@@ -1,2 +1,2 @@
 # singolo
-### https://setraiser.github.io/singolo/index.html
+### https://setraiser.github.io/singolo/
