@@ -354,6 +354,7 @@ a {
     color: #767e9e;
     line-height: 30px;
     margin-bottom: 45px;
+    text-align: justify;
 }
 
 .about__person-list {
@@ -441,6 +442,7 @@ a {
     color: #f0d8d9;
     font-weight: 300;
     line-height: 30px;
+    text-align: justify;
 }
 
 .quote__quote-content {
