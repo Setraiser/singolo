@@ -386,6 +386,7 @@ a {
     letter-spacing: -0.2px;
     text-overflow: ellipsis;
     overflow: hidden;
+    max-height: 18px;
 
 }
 
@@ -396,6 +397,7 @@ a {
     font-weight: 400;
     margin-top: 9px;
     margin-bottom: 23px;
+    text-align: justify;
 
 }
 
