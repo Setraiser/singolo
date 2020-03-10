@@ -77,7 +77,7 @@ a {
     display: block;
     color: #494e62;
     position: absolute;
-    right: -15;
+    right: -15px;
     top: -8px;
 }
 
@@ -226,12 +226,19 @@ a {
     line-height: 22px;
     color: #767e9e;
     padding-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 71px;
+    max-width: 219px;
+    word-break: break-word;
     
 }
 
 .services__item-content {
     position: relative;
     display: inline-block;
+    
+    
 }
 
 .services__header-item {
@@ -251,7 +258,7 @@ a {
 .portfolio {
     background-color: #2d303a;
     padding-top: 71px;
-    padding-bottom: 47px;
+    padding-bottom: 48px;
     border-bottom: 6px solid #767e9e;
 }
 
@@ -260,7 +267,8 @@ a {
     font-weight: 900;
     color: #666d89;
     line-height: 18px;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
+    margin-top: -2px;
 }
 
 .portfolio-description {
@@ -305,7 +313,7 @@ a {
 }
 
 .portfolio-list-wrapper {
-    margin-top: 18px;
+    margin-top: 19px;
     max-height: 621px;
     overflow: hidden;
 }
@@ -374,6 +382,8 @@ a {
     font-weight: 900;
     padding-top: 15px;
     letter-spacing: -0.2px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 
 }
 
@@ -414,7 +424,7 @@ a {
 .quote {
     background-color: #f06c64;
     padding-top: 57.5px;
-    padding-bottom: 26px;
+    padding-bottom: 25px;
     border-bottom: 6px solid #ea676b;
 }
 
@@ -530,10 +540,11 @@ a {
 
 .contact-description {
     font-size: 12px;
-    line-height: 21.5px;
+    line-height: 22.5px;
     font-weight: 400;
     color: #f0d8d9;
     margin-bottom: 25px;
+    text-align: justify;
 }
 
 .contact-el {
@@ -592,6 +603,8 @@ a {
 .copyright {
     color: #666d89;
     font-size: 12px;
+    margin-bottom: 4px;
+    margin-left: 1px;
 }
 
 .social-list-block {
