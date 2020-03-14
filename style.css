@@ -92,9 +92,13 @@ a {
     transition: color 0.5s ease-out; 
 }
 
-.nav-item a:hover {
+.nav-item a:hover, .active {
     color: #f06c64;
     transition: color 0.5s ease-out;
+}
+
+a.active {
+    color: #f06c64;
 }
 
 .slider {
