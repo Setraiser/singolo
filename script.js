@@ -124,9 +124,30 @@
     listWrapper.style.overflow = (portfolioList.children.length > 12) ? 'hidden' : 'visible';
     portfolioList.addEventListener('click', (event) => {
         portfolioList.querySelectorAll('img').forEach((img) => img.classList.remove('img-border'));
-        //console.log(event.target.tagName);
         if (event.target.tagName === 'IMG' && portfolioList.children.length <= 12) {
             event.target.classList.add('img-border');
         }
     })
+})();
+
+(function modalWindow() {
+    const submitBtn = document.querySelector('.submit-btn');
+    const themeField = document.querySelector('.subject-field');
+    const descriptionField = document.querySelector('.textarea-block');
+    const modal = document.querySelector('.modal-background');
+    const themeModal = document.querySelector('.theme');
+    const descriptionModal =  document.querySelector('.description');
+    const okBtn = document.querySelector('.ok');
+    
+
+    submitBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        themeModal.innerHTML = (themeField.value === '') ? 'Без темы' : `Тема: ${themeField.value}`;
+        descriptionModal.innerHTML = (descriptionField.value === '') ? 'Без описания' : `Описание: ${descriptionField.value}`;
+        modal.style.display = 'flex';
+    });
+
+    okBtn.addEventListener('click', (event) => {
+        modal.style.display = 'none';
+    });
 })();

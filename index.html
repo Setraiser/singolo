@@ -7,6 +7,14 @@
     <title>Singolo</title>
 </head>
 <body>
+    <div class="modal-background">
+        <div class="modal">
+            <h4 class="modal__modal-title">Письмо отправлено</h4>
+            <p class="theme"></p>
+            <p class="description"></p>
+            <button class="ok">ОК</button>
+        </div>
+    </div>
     <header class="header">
         <div class="wrapper">
             <div class="logo">
@@ -234,9 +242,9 @@
                 <p class="quote__quote-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="quote__quote-content">
                     <form action="#" method="POST" class="quote__quote-form">
-                        <input class="form-el text-field name-field" type="text" name="name" placeholder="Name (Required)" required pattern="[a-z]{3,12}[\_]?" minlength="3" maxlength="12">
+                        <input class="form-el text-field name-field" type="text" name="name" placeholder="Name (Required)" required pattern="[a-zA-Z_]{3,12}" minlength="3" maxlength="12">
                         <input class="form-el text-field email-field" type="email" name="email" placeholder="Email (Required)" required pattern="([\w]+@{1}[a-z]{2,}[\.]{1}[a-z]{2,}){1}">
-                        <input class="form-el text-field" type="text" name="subject" placeholder="Subject">
+                        <input class="form-el text-field subject-field" type="text" name="subject" placeholder="Subject">
                         <textarea name="details" cols="30" rows="10" class="form-el textarea-block" placeholder="Describe your project in detail..."></textarea>
                         <button class="submit-btn" type="submit">send</button>
                     </form>
