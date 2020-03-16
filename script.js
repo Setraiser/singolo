@@ -144,10 +144,10 @@
         event.preventDefault();
         themeModal.innerHTML = (themeField.value === '') ? 'Без темы' : `Тема: ${themeField.value}`;
         descriptionModal.innerHTML = (descriptionField.value === '') ? 'Без описания' : `Описание: ${descriptionField.value}`;
-        modal.style.display = 'flex';
+        modal.style.left = '0';
     });
 
     okBtn.addEventListener('click', (event) => {
-        modal.style.display = 'none';
+        modal.style.left = '100%';
     });
 })();
