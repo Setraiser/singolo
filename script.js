@@ -8,16 +8,25 @@
 
 (function displayPhoneToggle() {
     
-    const phones = document.querySelectorAll('.slider__slide-img-container');
-    phones.forEach((phone) => {
-        phone.addEventListener('click', (event) => {
+    const leftPhone = document.querySelector('.slider__slide-img-container.left-phone');
+    const rightPhone = document.querySelector('.slider__slide-img-container.right-phone');
+    
+        leftPhone.addEventListener('click', (event) => {
             
-            const elStyleVisibility = getComputedStyle(event.target.childNodes[1]).visibility;
+            const elStyleVisibility = getComputedStyle(leftPhone.childNodes[1]).visibility;
             let changeElVisible = event.target.childNodes[1];
             changeElVisible.style.visibility = (elStyleVisibility === 'visible') ? 'hidden' : 'visible';
      
         });
-    });
+
+        rightPhone.addEventListener('click', (event) => {
+            
+            const elStyleVisibility = getComputedStyle(rightPhone.childNodes[1]).visibility;
+            let changeElVisible = event.target.childNodes[1];
+            changeElVisible.style.visibility = (elStyleVisibility === 'visible') ? 'hidden' : 'visible';
+     
+        });
+    
     
 })();
 
