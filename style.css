@@ -801,7 +801,7 @@ a.active {
     background-color: #fff;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     
     body {
         min-width: 768px;
