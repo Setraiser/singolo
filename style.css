@@ -37,7 +37,7 @@ a.anchor {
     height: 100%;
 }
 
-.header__mobile-menu-overlay {
+.mobile__mobile-menu-overlay {
     display: none;
 }
 
@@ -1358,6 +1358,10 @@ a.active {
         letter-spacing: -0.035em;
         font-weight: bold;
         line-height: 50px;
+    }
+
+    .submit-btn {
+        width: 100%;
     }
 
 
