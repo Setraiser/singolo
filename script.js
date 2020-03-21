@@ -105,7 +105,6 @@
 (function randomPosItems() {
     const portfolioList = document.querySelector('.portfolio-list');
     const tagsBlock = document.querySelector('.filter-tags');
-    const tags = document.querySelectorAll('.filter-tags__tag');
     function newPos() {
         let lastChild = portfolioList.children[portfolioList.children.length-1];
         let firstChild = portfolioList.children[0];
@@ -130,6 +129,7 @@
 (function portfolioImageBorder() {
     const portfolioList = document.querySelector('.portfolio-list');
     const listWrapper = document.querySelector('.portfolio-list-wrapper');
+    if (screen.width <= 375) return false;
     listWrapper.style.overflow = (portfolioList.children.length > 12) ? 'hidden' : 'visible';
     portfolioList.addEventListener('click', (event) => {
         portfolioList.querySelectorAll('img').forEach((img) => img.classList.remove('img-border'));
@@ -160,3 +160,19 @@
         modal.style.left = '100%';
     });
 })();
+
+(function mobileMenu() {
+    const mainBurger = document.querySelector('.burger-default-container');
+    const mobileBurger = document.querySelector('.burger-container');
+    const mobileMenuOverlay = document.querySelector('.mobile__mobile-menu-overlay');
+
+    mainBurger.addEventListener('click', (event) => {
+        mobileMenuOverlay.style.right = '0';
+    });
+
+    mobileBurger.addEventListener('click', (event) => {
+        mobileMenuOverlay.style.right = '100%';
+    });
+
+})();
+
