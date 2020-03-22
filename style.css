@@ -1348,6 +1348,11 @@ a.active {
         position: relative;
         top: 135px;
         left: 75px;
+        width: 50%;
+    }
+
+    .mobile-menu-list  .nav-item{
+        width: auto;
     }
 
     
