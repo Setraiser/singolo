@@ -129,12 +129,13 @@
 (function portfolioImageBorder() {
     const portfolioList = document.querySelector('.portfolio-list');
     const listWrapper = document.querySelector('.portfolio-list-wrapper');
-    if (screen.width <= 375) return false;
+    let border = (screen.width < 768) ? 'img-border-visible' : 'img-border';
+    
     listWrapper.style.overflow = (portfolioList.children.length > 12) ? 'hidden' : 'visible';
     portfolioList.addEventListener('click', (event) => {
-        portfolioList.querySelectorAll('img').forEach((img) => img.classList.remove('img-border'));
+        portfolioList.querySelectorAll('img').forEach((img) => img.classList.remove('img-border-visible', 'img-border'));
         if (event.target.tagName === 'IMG' && portfolioList.children.length <= 12) {
-            event.target.classList.add('img-border');
+            event.target.classList.add(border);
         }
     })
 })();
