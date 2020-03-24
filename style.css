@@ -633,6 +633,7 @@ a.active {
     border: none;
     border-radius: 5px;
     background-color: #FBC65F;
+    outline: none;
     
     font-weight: bold;
     transition: .5s ease-out;
@@ -863,7 +864,7 @@ a.active {
 
 
     .portfolio-list-item {
-        width: 31%;
+        width: 31.5%;
         height: 28%;
     }
     .portfolio-img {
@@ -872,7 +873,7 @@ a.active {
     }
 
     .portfolio-list-wrapper {
-        max-height: 95em;
+        max-height: 97em;
     }
 
     .about__person-list-item {
@@ -1031,28 +1032,30 @@ a.active {
         padding-bottom: 20px;
     }
 
+    .portfolio .wrapper {
+        padding: 0 5px;
+    }
+
   
 
     .portfolio-list-wrapper {
         width: 100%;
         overflow: hidden !important;
-        justify-content: space-around;
+        
         max-height: 159vw;
     }
 
-    .portfolio-list {
-        justify-content: space-around;
-    }
+    
 
     .portfolio-list-item {
-        width: 45%;
-        height: 45%;
-        margin-bottom: 14px;
+        width: 48.5%;
+        height: 47%;
+        margin-bottom: 3px;
     }
     
 
     .portfolio-img {
-        width: 100%;
+        width: 96%;
         height: 100%;
         border: 5px solid transparent;
     }
@@ -1131,7 +1134,7 @@ a.active {
         position: relative;
         background-color: #2D303A;
         box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
-        padding-top: 20px;
+        padding-top: 33px;
         
     }
 
@@ -1197,7 +1200,7 @@ a.active {
 
 @media screen and (max-width: 620px) {
     .portfolio-list-wrapper {
-        max-height: 162vw;
+        max-height: 161vw;
     }
 }
 
@@ -1206,15 +1209,15 @@ a.active {
 
 
     .slider .wrapper {
-        height: 25em;
+        height: 17.9em;
     }
     .slider__slide-img-container.left-phone {
-        width: 32%;
+        width: 28%;
     }
 
     .slider__slide-img-container.right-phone {
-        height: 47%;
-        width: 64%;
+        height: 51%;
+        width: 56%;
     }
 
     .services__layout-3-column {
@@ -1230,11 +1233,16 @@ a.active {
     }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 520px) {
     .portfolio-list-wrapper {
-        max-height: 165vw;
+        max-height: 161vw;
+    }
+
+    .portfolio-img {
+        width: 95%;
     }
 }
+
 
 @media screen and (max-width: 440px){
     .about__person-list {
@@ -1242,14 +1250,26 @@ a.active {
     }
 
     .portfolio-list-wrapper {
-        max-height: 169vw;
+        max-height: 163vw;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 410px) {
+    .portfolio-img {
+        width: 94%;
+    }
+} 
+
+@media screen and (max-width: 365px) {
     .portfolio-list-wrapper {
-        max-height: 175vw;
+        max-height: 163vw;
+    }
+
+    .portfolio-img {
+        width: 93%;
     }
 }
+
+
 
 

@@ -141,7 +141,7 @@
 })();
 
 (function modalWindow() {
-    const submitBtn = document.querySelector('.submit-btn');
+    const form = document.querySelector('.quote__quote-form');
     const themeField = document.querySelector('.subject-field');
     const descriptionField = document.querySelector('.textarea-block');
     const modal = document.querySelector('.modal-background');
@@ -149,9 +149,11 @@
     const descriptionModal =  document.querySelector('.description');
     const okBtn = document.querySelector('.ok');
     
-
-    submitBtn.addEventListener('click', (event) => {
+    
+    
+    form.addEventListener('submit', (event) => {
         event.preventDefault();
+        if (!form.checkValidity()) return false;
         themeModal.innerHTML = (themeField.value === '') ? 'Без темы' : `Тема: ${themeField.value}`;
         descriptionModal.innerHTML = (descriptionField.value === '') ? 'Без описания' : `Описание: ${descriptionField.value}`;
         modal.style.left = '0';
